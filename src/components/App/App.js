@@ -11,7 +11,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">TV Series App</h1>
         </header>
-        <Intro message="this value from props" />       
+        <Intro message="Here the most series you love" />
         <Series />
       </div>
     );
