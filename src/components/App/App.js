@@ -3,6 +3,11 @@ import './App.css';
 import Intro from '../Intro/Intro';
 
 class App extends Component {
+  state = {
+    series: []
+  }
+
+  
   render(){
     return (
       <div className="App">
@@ -10,6 +15,7 @@ class App extends Component {
           <h1 className="App-title">TV Series App</h1>
         </header>
         <Intro message="this value from props"/>
+        The length of series array - {this.state.series.length}
       </div>
     );
   }
