@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
-// import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
-
+import Intro from '../Intro/Intro';
 
 class App extends Component {
   render(){
@@ -10,9 +9,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">TV Series App</h1>
         </header>
-          <p className="App-intro">
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
+        <Intro message="this value from props"/>
       </div>
     );
   }
