@@ -9,7 +9,10 @@ class Series extends Component {
     componentDidMount() {
     fetch('http://api.tvmaze.com/search/shows?q=Vikings')
         .then(response => response.json())
-        .then(json => this.setState({ series: json }))
+        .then(json => console.log(json));
+    fetch('http://api.tvmaze.com/search/shows?q=Vikings')
+        .then(response => response.json())
+        .then(json => this.setState({ series: json }));
     }
     
     render() {
