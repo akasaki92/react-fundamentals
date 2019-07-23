@@ -5,7 +5,7 @@ import Series from "../../containers/Series/Series";
 const Main = props => {
     return (
         <Switch>
-            <Route exact path="/" component={Series} />
+            <Route exact path="/Series" component={Series} />
         </Switch>
     );
 };
