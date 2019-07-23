@@ -29,18 +29,18 @@ class Series extends Component {
                         onChange={this.onSeriesInputChange}
                     />
                 </div>
-                {!isFetching && series.length === 0 && seriesName.trim() === "" && (
-                    <p>Please enter series name into the input</p>
-                )}
-                {!isFetching && series.length === 0 && seriesName.trim() !== "" && (
-                    <p>No TV series have been found</p>
-                )}
+                {!isFetching &&
+                    series.length === 0 &&
+                    seriesName.trim() === "" && (
+                        <p>Please enter series name into the input</p>
+                    )}
+                {!isFetching &&
+                    series.length === 0 &&
+                    seriesName.trim() !== "" && (
+                        <p>No TV series have been found</p>
+                    )}
                 {isFetching && <Loader />}
-                {!isFetching && (
-                    <p>
-                        <SeriesList list={this.state.series} />
-                    </p>
-                )}
+                {!isFetching && <SeriesList list={this.state.series} />}
             </div>
         );
     }
