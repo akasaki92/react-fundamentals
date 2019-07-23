@@ -4,7 +4,7 @@ const Intro = (props) => {
     return (
         <p className="App-intro">
             {props.message}
-      </p>
+        </p>
     );
 }
 export default Intro;
