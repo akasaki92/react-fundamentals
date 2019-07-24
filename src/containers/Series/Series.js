@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SeriesList from "../../components/SeriesList/SeriesList";
-import Loader from "../../components/Loader";
+import Loader from "../../components/Loader/Loader";
 import Intro from "../../components/Intro/Intro";
 
 class Series extends Component {
